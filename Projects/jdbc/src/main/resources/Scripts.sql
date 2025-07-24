@@ -38,6 +38,11 @@ CREATE PROCEDURE create_emp (
     IN p_Salary INT
 )
 BEGIN
+	INSERT INTO EMPLOYEE (id, empName, Dept, Des, Salary)
+	VALUES (p_id, p_empName, p_Dept, p_Des, p_Salary);
+END$$
+
+DELIMITER ;
 
 
 --Function
@@ -45,10 +50,3 @@ CREATE FUNCTION getUpperName(name VARCHAR(50))
 RETURNS VARCHAR(50)
 DETERMINISTIC
 RETURN UPPER(name);
-
-	
-	INSERT INTO EMPLOYEE (id, empName, Dept, Des, Salary)
-    VALUES (p_id, p_empName, p_Dept, p_Des, p_Salary);
-END$$
-
-DELIMITER ;
