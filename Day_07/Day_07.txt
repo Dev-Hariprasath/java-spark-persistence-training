@@ -1,5 +1,9 @@
 Notes
--- Thread is single unit
+
+
+Thread :
+
+Thread is single unit
 
 Life Cycle
 	- New
@@ -23,16 +27,20 @@ Preventation :
 LiveLock
 
 
----AfterNoon
+1. Lambda function 
+ (Parameter) -> { Expression }
 
-1. Lambda function - (Parameter) -> { Expression }
 2. Interface 
 
---Marker - with no methods e.g serialization
+-- Marker - with no methods e.g serialization
 -- Functional Inteface - With only one Method e.g Runnable, Comparable, Callable.
 
 Runnable - Only one Method Run() to run a thread
 Comparable - Only one Method CompareTo to compare collection e.x Collection.sort(List<> name)
+
+3. Method Reference 
+
+
 
 
 Question
@@ -40,3 +48,10 @@ Question
 1. Which Priority execute first ?
 2. Can i directly run method.
 3. Functional Interface vs Marker Interface Vs Inteface
+
+
+Task
+
+1. Create a functional interface take two value - method for add, sub, mul, div
+2. Example for new Date and Time API
+
