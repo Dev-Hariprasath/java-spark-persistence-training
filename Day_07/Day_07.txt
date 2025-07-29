@@ -1,0 +1,29 @@
+Notes
+-- Thread is single unit
+
+Life Cycle
+	- New
+	- Runnable
+	- Waiting
+	- Timed Waiting
+	- Terminated
+
+run() - containing functionality
+start() - call run() method
+If we directly call the run(), it will behave like normal method not like thread.
+
+
+DeadLock: When two or More thread locked a resourse and wait for another resourse which is locked by another thread
+
+Preventation :
+	- notify()
+	- notifyAll()
+	- wait()
+
+LiveLock
+
+
+Question
+
+1. Which Priority execute first ?
+2. Can i directly run method.
