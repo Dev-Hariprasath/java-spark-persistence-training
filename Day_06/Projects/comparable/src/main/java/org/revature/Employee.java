@@ -50,26 +50,30 @@ public class Employee implements Comparable<Employee>{
     }
 
 
-// Sort By Using Id
-//    @Override
-//    public int compareTo(Employee o) {
-//        if(this.getId() < o.getId()) return -1;
-//        if(this.getId() > o.getId()) return 1;
-//        return 0;
-//    }
+/*
+ Sort By Using Id
+    @Override
+    public int compareTo(Employee o) {
+        if(this.getId() < o.getId()) return -1;
+        if(this.getId() > o.getId()) return 1;
+        return 0;
+    }
+*/
 
 
-// Sort By using Name
+    // Sort By using Name
     @Override
     public int compareTo(Employee o) {
         return this.getName().equals(o.getName()) ? 0 : this.getName().compareTo(o.getName());
     }
 
-//Sort By Using Salary
-//    @Override
-//    public int compareTo(Employee o) {
-//        if(this.getName() < o.getSalary()) return -1;
-//        if(this.getName() > o.getSalary()) return 1;
-//        return 0;
-//    }
+/*
+Sort By Using Salary
+    @Override
+    public int compareTo(Employee o) {
+        if(this.getName() < o.getSalary()) return -1;
+        if(this.getName() > o.getSalary()) return 1;
+        return 0;
+    }
+*/
 }

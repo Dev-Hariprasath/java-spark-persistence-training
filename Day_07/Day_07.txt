@@ -23,7 +23,20 @@ Preventation :
 LiveLock
 
 
+---AfterNoon
+
+1. Lambda function - (Parameter) -> { Expression }
+2. Interface 
+
+--Marker - with no methods e.g serialization
+-- Functional Inteface - With only one Method e.g Runnable, Comparable, Callable.
+
+Runnable - Only one Method Run() to run a thread
+Comparable - Only one Method CompareTo to compare collection e.x Collection.sort(List<> name)
+
+
 Question
 
 1. Which Priority execute first ?
 2. Can i directly run method.
+3. Functional Interface vs Marker Interface Vs Inteface
