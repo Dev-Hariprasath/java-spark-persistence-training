@@ -1,0 +1,29 @@
+Assignment 
+
+
+
+Task
+1. Implement the Comparitor and comparable method
+
+
+Questions
+1. Need to review - Linked List vs Array List vs Stack vs Vector List
+2. In Which Scenario you use Linked List and Array List
+3. Why the generics have the type in left hand side but not in right hand side.
+4. Diff Hash Set vs Tree Set vs Linked Hash Set
+5. Queue - Poll() vs Remove() vs element() vs peak()
+6. How Do you iterate over a map
+7. How do you add element to the Map
+8. Diff B/W Hash Table Vs Hash Map
+9. Comparator and Comparable
+
+
+
+Notes:
+
+Collection - is a interface provide list, queue, set.
+Collections - is a class, that provide Searching, sorting methods.
+
+
+Collection Interface
+-- use decorate Design pattern

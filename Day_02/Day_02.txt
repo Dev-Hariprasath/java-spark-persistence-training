@@ -1,0 +1,47 @@
+https://www.hackerrank.com/0722-2263
+HackerRank
+Join over 26 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.
+ 
+
+https://sqlzoo.net/wiki/SQL_Tutorial
+SQLZoo
+ 
+
+https://www.mysqltutorial.org/
+
+
+https://leetcode.com/studyplan/top-sql-50/
+
+
+
+
+Day 02
+
+Know about
+
+Aggregate functions
+Scalar function
+Joins
+Group By & Having & Where
+Subquery vs Join
+Union vs Join
+
+
+
+
+Day 03
+
+create emp tab
+
+emp id prk
+emp name not null
+email unique
+dept not null indx
+designation not null indx
+salary greater than 0
+
+
+
+assignment
+1. loop
+2. Triggers - INSERT UPDATE DELETE

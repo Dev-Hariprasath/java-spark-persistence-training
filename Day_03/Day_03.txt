@@ -1,0 +1,92 @@
+Notes 
+
+index
+view
+Stored Procedure
+Triggers - INSERT UPDATE DELETE
+Stored Procedure Vs Function
+
+
+https://www.hackerrank.com/0723-2263
+
+advantages and benefits of using the Java language
+
+primitive type
+
+What is a stack trace 
+
+Explain the static, abstract and final keywords
+
+constructors to instantiate objects
+
+Explain the difference between classes and objects
+
+method signature for the main method
+
+Explain the 4 OOP principles  : Abstraction, encapsulation, polymorphism, inheritance
+
+abstract class vs interface
+
+Override and overload 
+
+this and super keyword
+
+Differentiate between the  .equals() and == syntax
+
+explain the access modifiers
+
+checked or unchecked exceptions
+
+how to handle exceptions
+
+try,  catch, final, throw and throws
+
+what is maven
+
+Maven  life cycle and maven goals 
+
+Define the differences between the JRE, JDK, and JVM.
+
+What is logging
+
+Stack and heap
+
+final, finally and finalize
+
+what are the different logging level
+
+creating and utilizing custom exceptions
+
+Understand the Maven lifecycle & how to use Maven from the console.
+
+Explain the different components of Maven's pom.xml file
+
+Explain and use the following design patterns: Singleton, Factory
+
+Understand Stack & Heap memory, and the String pool.
+
+Understand when to use String vs StringBuilder vs Stringbuffer
+
+What is garbage collection 
+
+what is the non-access modifiers
+
+what are Wrapper Classes and autoboxing
+
+Agile
+
+Scrum
+
+Scrum ceremony (stand up, sprint review, sprint planning etc)
+
+scrum key words (user story, epic, story points)
+
+git 
+
+git commands
+
+gitignore
+
+branching
+
+ 

@@ -1,0 +1,103 @@
+Assignment 
+
+
+
+
+Task
+1. practice Window Functions
+
+Questions :
+
+1. Diff b/w Pojo vs bean in java
+
+
+Notes :
+
+DAO
+
+The Data Access Object (DAO) design pattern in Java is a structural pattern that provides an abstract interface for accessing data from a persistent storage mechanism, such as a database. It separates the data access logic from the business logic of an application, promoting a cleaner and more maintainable codebase. 
+Key Components of the DAO Pattern:
+Model/Value Object:
+This represents the data structure or business object that will be stored in and retrieved from the data source. It is typically a Plain Old Java Object (POJO) with getter and setter methods.
+DAO Interface:
+This interface defines the standard operations (e.g., create, read, update, delete - CRUD) that can be performed on the model objects. This provides a contract for data access, allowing for flexibility in swapping out implementations.
+DAO Concrete Class (Implementation):
+This class implements the DAO interface and contains the specific code to interact with the chosen data source (e.g., JDBC for relational databases, JPA/Hibernate, or file systems). It handles the low-level details of data storage and retrieval.
+Benefits of Using the DAO Pattern:
+Separation of Concerns:
+It clearly separates the data access logic from the business logic, making the application more modular and easier to understand.
+Flexibility and Portability:
+Changes to the underlying data source (e.g., switching databases) only require modifications to the DAO implementation, without affecting the business logic.
+Maintainability:
+Centralizing data access code simplifies maintenance and debugging.
+Testability:
+DAOs can be easily mocked for unit testing the business logic independently of the actual data source.
+
+
+
+Ref Docs :
+
+Window Functions in SQL
+SQL window functions are essential for advanced data analysis and database management. It is a type of function that allows us to perform calculations across a specific set of rows related to the current row. These calculations happen within a defined window of data and they are particularly useful for aggregates, rankings and cumulative totals without modifying the dataset.
+
+OVER Clause:
+The OVER clause is crucial for defining the window of rows used by the function. It can include PARTITION BY for grouping rows and ORDER BY for ordering rows within each partition. 
+
+Relationship to Aggregate Functions:
+While window functions perform calculations, they differ from aggregate functions like SUM() or AVG(), which reduce multiple rows into a single row. Window functions return a value for each row in the result set, incorporating values from other rows within its defined window. 
+
+Types of Window Functions:
+Ranking Functions: RANK(), DENSE_RANK(), ROW_NUMBER(), calculate the rank of each row within its partition. 
+Aggregate Functions: SUM(), AVG(), MIN(), MAX(), COUNT() can be used as window functions to perform calculations within the defined window. 
+Analytic Functions: Functions like LAG(), LEAD(), FIRST_VALUE(), LAST_VALUE() provide access to values from preceding or following rows within the window. 
+
+
+DEMO
+CREATE TABLE baby_names (
+    Gender VARCHAR(10),
+    Name VARCHAR(50),
+    Total INT
+);
+
+INSERT INTO baby_names (Gender, Name, Total) VALUES
+('Girl', 'Ava', 95),
+('Girl', 'Emma', 106),
+('Boy', 'Ethan', 115),
+('Girl', 'Isabella', 100),
+('Boy', 'Jacob', 101),
+('Boy', 'Liam', 84),
+('Boy', 'Logan', 73),
+('Boy', 'Noah', 120),
+('Girl', 'Olivia', 100),
+('Girl', 'Sophia', 88);
+
+Operations to be performed
+
+1. view the table
+2. Order by popularity
+3. add a popularity column
+4. try different functions
+5. try different windows
+6. what are the top 2 most popular names for each gender
+
+How to perform
+-- 1. view the table
+select * from baby_names;
+-- 2. Order by popularity
+select * from baby_names order by total DESC;
+-- 3. add a popularity column
+SELECT gender,name,total,
+row_number() OVER(order by total desc) as Popularity 
+from baby_names;
+-- 4. try different functions
+SELECT gender,name,total,
+row_number() OVER(order by total desc) as Popularity,
+RANK() OVER(order by total desc) as Popularity_R ,
+DENSE_RANK() OVER(order by total desc) as Popularity_DR 
+from baby_names;
+-- 5. try different windows
+SELECT gender,name,total,
+row_number() OVER(PARTITION BY Gender ORDER by total desc) as Popularity 
+from baby_names;
+-- 6. what are the top 2 most popular names for each gender
+select * from 
