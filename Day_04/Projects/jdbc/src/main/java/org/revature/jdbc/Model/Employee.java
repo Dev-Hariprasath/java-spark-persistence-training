@@ -1,4 +1,4 @@
-package org.revature.jdbc;
+package org.revature.jdbc.Model;
 
 public class Employee {
 

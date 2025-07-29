@@ -1,4 +1,6 @@
-package org.revature.jdbc;
+package org.revature.jdbc.Controller;
+
+import org.revature.jdbc.Service.EmployeeService;
 
 import java.util.Scanner;
 

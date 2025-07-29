@@ -1,13 +1,16 @@
-package org.revature.jdbc;
+package org.revature.jdbc.DAO;
+
+import org.revature.jdbc.Model.Employee;
 
 import java.sql.*;
 
-public class EmployeeDAO {
+public class EmployeeDAO implements DAO {
 
     String url = "jdbc:mysql://localhost:3306/day_03";
     String username = "root";
     String password = "123456789";
 
+    @Override
     public void getAllEmployee() {
         String sql = "SELECT * FROM EMPLOYEE ORDER BY id";
 
@@ -30,6 +33,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void getEmployeeById(int id) {
         String sql = "SELECT * FROM EMPLOYEE WHERE id = ?";
 
@@ -57,6 +61,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void saveEmployee(Employee employee) {
         String call = "{CALL create_emp(?, ?, ?, ?, ?)}";
 
@@ -77,6 +82,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void updateEmployee(Employee employee) {
         String sql = "UPDATE EMPLOYEE SET empName = ?, Dept = ?, Des = ?, Salary = ? WHERE id = ?";
 
@@ -97,6 +103,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void deleteEmployee(int id) {
         String sql = "DELETE FROM EMPLOYEE WHERE id = ?";
 
@@ -112,6 +119,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void getTotalEmployeeCount() {
         String sql = "SELECT COUNT(*) FROM EMPLOYEE";
 
@@ -129,6 +137,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void getTotalDeptCount() {
         String sql = "SELECT COUNT(DISTINCT Dept) FROM EMPLOYEE";
 
@@ -146,6 +155,7 @@ public class EmployeeDAO {
         }
     }
 
+    @Override
     public void getEmployeesNameInUpperCase() {
         String sql = "SELECT getUpperName(empName) AS upperName FROM employee;";
 
