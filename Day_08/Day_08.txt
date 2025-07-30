@@ -1,0 +1,32 @@
+Project
+
+1. Custom Exception
+2. Logging
+3. MVC
+
+
+
+Notes 
+
+
+--Lambda 
+
+Using lambda we achieve the functional interface.
+It does not store or modify on data.
+It will only perform functional style on data.
+
+
+--File Handling
+
+Primitive Operation
+
+1. Byte Stream - read byte by byte - Deals with Low level operation like Image, Vedio
+for read FileInputStream , write FileOutputStream
+
+2. Charcter Stream
+for read FileReader , write FileWriter
+
+Task 
+
+1. Practice the map(), filter(), reduce()
+2. Read the properties like username, password, url from the file and use in the connection. Use singleton pattern for object creation.
