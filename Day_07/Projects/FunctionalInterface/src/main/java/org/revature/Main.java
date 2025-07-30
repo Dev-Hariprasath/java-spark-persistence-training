@@ -9,15 +9,21 @@ public class Main {
         int a = in.nextInt();
         System.out.println("Enter the B value :");
         int b = in.nextInt();
-        System.out.println("Choose one operation :");
+        in.nextLine();
+        System.out.println("Choose any one operation add, mul, sub, div :");
         String op = in.nextLine();
 
-
-        FunctionalInterface func = (i, j, ope) ->{
-          if(ope.equals("+")){
-              System.out.println(a + b);
-          }
+        FunctionalInterface func = (i, j, ope) -> {
+            System.out.println("The Result of the operation " +ope+ ":");
+            switch (ope.toLowerCase()) {
+                case "add" -> System.out.println(i + j);
+                case "sub" -> System.out.println(i - j);
+                case "mul" -> System.out.println(i * j);
+                case "div" -> System.out.println(i / j);
+            }
         };
+
+        func.operation(a,b,op);
 
     }
 }
