@@ -1,0 +1,195 @@
+✅ SDLC (Software Development Life Cycle)
+
+1. What is SDLC? Explain its phases.
+
+
+2. What are the different models of SDLC?
+
+Waterfall
+
+V-Model
+
+Iterative
+
+Spiral
+
+Agile
+
+
+
+3. Which SDLC model is best and why?
+
+
+4. What happens in the Requirements phase of SDLC?
+
+
+5. How is the Testing phase handled in SDLC?
+
+
+6. What is the difference between Verification and Validation?
+
+
+7. Explain the importance of the Design phase.
+
+
+8. What are deliverables in each SDLC phase?
+
+
+9. What are functional and non-functional requirements?
+
+
+10. How is risk management handled in SDLC?
+
+
+
+
+---
+
+✅ Agile Methodology
+
+1. What is Agile? How is it different from Waterfall?
+
+
+2. What are the principles of Agile?
+
+
+3. Explain the Agile Manifesto.
+
+
+4. What is Scrum in Agile?
+
+
+5. What are the roles in Scrum?
+
+Product Owner
+
+Scrum Master
+
+Development Team
+
+
+
+6. What is a Sprint? How long is a Sprint?
+
+
+7. What is the difference between Epic, Story, and Task?
+
+
+8. What are stand-up meetings? What is their purpose?
+
+
+9. What are Burn-up and Burn-down charts?
+
+
+10. What are Agile ceremonies?
+
+Sprint Planning
+
+Daily Stand-up
+
+Sprint Review
+
+Sprint Retrospective
+
+
+
+11. What is the Definition of Done?
+
+
+12. How is velocity measured in Agile?
+
+
+13. How is testing handled in Agile?
+
+
+
+
+---
+
+✅ Git (Version Control)
+
+1. What is Git and why is it used?
+
+
+2. What’s the difference between Git and GitHub?
+
+
+3. Explain the difference between git pull and git fetch.
+
+
+4. What is a commit in Git?
+
+
+5. What is the staging area in Git?
+
+
+6. What is the difference between git merge and git rebase?
+
+
+7. What is a Git branch? Why do we use branches?
+
+
+8. How do you resolve a merge conflict?
+
+
+9. Explain the Git workflow (Clone → Stage → Commit → Push).
+
+
+10. What is the difference between git reset and git revert?
+
+
+11. What is HEAD in Git?
+
+
+12. How do you undo a commit?
+
+
+13. What is .gitignore?
+
+
+14. Explain Git tags and their use.
+
+
+15. What is the use of git stash?
+
+
+
+
+---
+
+✅ GitHub (Remote Repository Management)
+
+1. What is GitHub and how is it different from Git?
+
+
+2. What is a pull request (PR)?
+
+
+3. How do you fork a repository?
+
+
+4. What is a GitHub Action?
+
+
+5. What is the difference between clone and fork?
+
+
+6. How do you create a branch on GitHub and push code to it?
+
+
+7. How does GitHub handle code review?
+
+
+8. How do you use issues and labels in GitHub?
+
+
+9. What is a README.md file and why is it important?
+
+
+10. How do you collaborate with a team using GitHub?
+
+
+11. Explain the flow of a feature branch and pull request review.
+
+
+12. How do you set up a GitHub repository from scratch?
