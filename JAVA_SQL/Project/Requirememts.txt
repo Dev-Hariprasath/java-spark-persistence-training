@@ -1,0 +1,108 @@
+# RevStox Project Specification - Java & SQL
+ 
+## Application Overview
+ 
+The RevStox is a data engineering project aiming to provide users with valuable insights into historical stock market data for informed decision-making. The project will leverage a dataset containing various stock-related attributes, including date, symbol, open, close, high, low prices, trading volume, and more to deliver a robust, scalable, and user-friendly solution for stock analysis and decision-making using Java backend services and SQL database operations.
+ 
+## Core Functional Requirements
+ 
+As a User, I want to:
+ 
+### Data Retrieval & Management:
+- Retrieve historical stock data (Open, High, Low, Close prices) for any stock symbol
+- Access stock information with date range filtering capabilities
+- Import and store stock market data from CSV files into a relational database
+- Query stock data with proper validation and error handling
+ 
+### Price Analysis:
+- Calculate daily price volatility using SQL: (high_price - low_price) / open_price * 100
+- Calculate daily price changes: (close_price - open_price) / open_price * 100
+- Identify price gaps between trading sessions: current_open - previous_close
+- Generate moving averages over different periods (7-day, 30-day, 90-day) using SQL window functions
+ 
+### Volume Analysis:
+- Calculate Volume Weighted Average Price (VWAP) using SQL: SUM(price * volume) / SUM(volume)
+- Calculate daily turnover: close_price * volume
+- Analyze trading volume patterns and trends over time
+- Calculate percentage of deliverable volume to assess stock liquidity
+ 
+### Comparative Analysis:(Optional - Streach Goals)
+- Compare multiple stocks' performance metrics side by side
+- Rank stocks based on various criteria (volume, volatility, price change)
+- Generate statistical summaries for stock portfolios
+- Identify correlations between volume and price movements
+ 
+## Technical Requirements - Java & SQL Focus
+ 
+*Java:*
+- Follow best practices and design patterns 
+ 
+*Validation and Error Handling:*
+- Handle exceptions gracefully
+ 
+*Logging:*
+- Use proper logging framework 
+- Configure log levels using configuration files
+- Output logs to specified log files
+ 
+*Security:*
+- Prevent SQL injection using parameterized queries
+- Implement proper input validation and sanitization
+ 
+*Coding Standards:*
+- Follow industry coding standards and conventions
+- Implement modular code development for better reusability
+- Use proper resource management for database connections
+- Apply appropriate design patterns and application layering 
+ 
+### Data Management (SQL)
+ 
+*Database Design:*
+- Design normalized database schema for stock market data
+- Create appropriate tables for stocks, daily prices, and analytics
+- Implement proper primary keys, foreign keys, and indexes
+- Ensure data integrity constraints
+ 
+*Data Processing:*
+- Load stock market dataset from CSV files into database
+
+### Stock Management
+ 
+## Database Schema Requirements
+ 
+### Core Tables
+- *stocks*: symbol, company_name, sector, market_cap
+- *daily_prices*: symbol, trade_date, open_price, high_price, low_price, close_price, volume, turnover
+- *stock_analytics*: symbol, date, volatility, moving_avg_7, moving_avg_30
+ 
+### Required SQL Operations
+- Complex joins between stock and price data
+- Window functions for moving averages
+- Aggregate functions for statistical analysis
+- Date-based filtering and grouping operations
+ 
+## Definition of Done
+ 
+- Working Java application 
+- Complete database schema with sample data
+- All validation and error handling implemented
+ 
+## Non-Functional Requirements
+ 
+- Application development using Git version control
+- Follow Agile/Scrum development process
+- Implement proper logging and monitoring
+- Ensure scalable database design
+- Code should be production-ready with proper configuration management
+ 
+## Source Data
+ 
+The data can be acquired from Kaggle using stock market CSV files containing the following columns:
+- Date, Symbol, Open, High, Low, Close, Volume, Turnover, Trades, Deliverable Volume, %Deliverable
+ 
+## Success Criteria
+ 
+- Functional Java Application serving stock market analytics
+- Efficient SQL queries processing historical stock data
+- Clean, maintainable Java codebase following best practices
+- Proper documentation and demonstration capability

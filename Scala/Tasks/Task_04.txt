@@ -1,0 +1,12 @@
+Task
+
+1. Create temporary table
+2. Study about window function
+3. Scalar function
+4. transient and volatile 
+5. coalesce
+7. Data Set And RDD
+8. Catalyst and Tungsten
+9. Fine-Granit control
+
+

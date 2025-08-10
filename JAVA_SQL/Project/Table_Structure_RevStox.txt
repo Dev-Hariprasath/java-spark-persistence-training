@@ -1,0 +1,27 @@
+Table: daily_prices
+Columns:
+id bigint UN AI PK 
+symbol varchar(50) 
+trade_date date 
+open_price double 
+high_price double 
+low_price double 
+close_price double 
+volume bigint 
+turnover double
+
+Table: stock_analytics
+Columns:
+id int AI PK 
+symbol varchar(20) 
+date date 
+volatility double 
+moving_avg_7 double 
+moving_avg_30 double
+
+Table: stocks
+Columns:
+symbol varchar(20) PK 
+company_name varchar(100) 
+sector varchar(50) 
+market_cap bigint

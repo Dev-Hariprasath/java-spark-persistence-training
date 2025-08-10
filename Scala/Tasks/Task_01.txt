@@ -1,0 +1,42 @@
+1. Filter Even Numbers
+2. Find Names Starting with 'A'
+3. Square Numbers
+4. Count Elements Greater Than 10
+5. Convert Strings to Uppercase
+6. Find First Element Greater Than 50
+7. Sort Strings by Length
+8. Remove Duplicates
+9. Sum of Odd Numbers
+10. Word Count from Sentences
+11. Group Strings by First Letter
+12. Find Employee with Highest Salary
+13. Partition Numbers into Even and Odd
+14. Find 3rd Highest Number
+15. Join Strings with Comma
+16. Average Salary
+
+
+
+Write a program to print "Hello, Scala!"
+Write a program to add, subtract, multiply, and divide two numbers.
+Check whether a given number is even or odd.
+Find the greatest of three numbers using if-else.
+Write a program to check if a string is a palindrome.
+Calculate factorial of a number using recursion.
+Print the Fibonacci series up to n terms.
+Reverse a given string without using .reverse.
+Count the number of vowels in a string.
+Check whether a given number is prime.
+ 
+ 
+Print all prime numbers between 1 and 100.
+Write a function to find the second largest number in an array.
+Sort a list of integers using sortWith or sorted.
+Merge two sorted lists into a single sorted list.
+Find the frequency of each character in a string.
+Remove duplicates from a list.
+Check if a number is an Armstrong number.
+(e.g., 153 → 1³ + 5³ + 3³ = 153)
+Implement a simple calculator using match or match-case.
+Check whether two strings are anagrams.
+Write a function that accepts a list of integers and returns a list of squares of even numbers only.

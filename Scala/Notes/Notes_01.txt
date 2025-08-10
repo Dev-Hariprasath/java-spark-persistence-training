@@ -1,0 +1,2 @@
+1. tail recursive - call the function at the end or tail of the function. It used maintain the efficient memory management.
+2. if you not use the new key word for creating object, it will automatically create a object.

@@ -1,0 +1,29 @@
+Logging System with Multiple Behaviors
+Create a trait Logger with a log method. Create mixins TimestampLogger and UpperCaseLogger that modify the log output. Mix them into a FileProcessor class in different combinations to see the effect.
+
+Payment Gateway Simulation
+Define a Payment trait with pay(amount: Double) method. Implement classes for CreditCardPayment and UPIPayment that extend it. Add a Discount trait to apply a discount before payment.
+
+Vehicle Inheritance
+Create a base class Vehicle with properties speed and capacity. Derive Car and Bike classes that override a method fuelType to display the type of fuel.
+
+Library Management System
+Create classes for Book, Member, and Library. The Library should allow adding books, issuing books to members, and displaying issued books.
+
+Safe File Reader
+Write a function that takes a file path and reads its contents using Try, Success, and Failure. If the file is missing, display an error message instead of crashing.
+
+Safe Division Calculator
+Create a method safeDivide(a: Int, b: Int) that returns a Try[Double]. Use pattern matching to handle division by zero gracefully.
+
+List Transformer
+Write a higher-order function that takes a list of integers and a transformation function, then applies the transformation to each element.
+
+Function Currying for Tax Calculator
+Create a curried function calculateTax(rate: Double)(amount: Double) that calculates tax for a given rate and amount. Demonstrate partial application.
+
+Parallel Data Fetcher
+Simulate fetching data from two APIs in parallel using Future. Combine the results once both fetches are complete, and display the total execution time.
+
+Unit Test for String Reversal
+Write a function reverseString(str: String): String and create unit tests using MUnit to verify it works for normal strings

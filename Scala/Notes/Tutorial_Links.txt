@@ -1,0 +1,7 @@
+Scala tutorial for Java programmers with examples
+
+https://www.educative.io/blog/scala-tutorial-for-java-programmers
+
+https://www.w3resource.com/mysql-exercises/
+
+https://learn.microsoft.com/en-us/ssms/install/install
