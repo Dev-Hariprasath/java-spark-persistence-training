@@ -1,0 +1,180 @@
+### 🪟 What Is a **Window Function** in SQL?
+
+A **window function** performs calculations **across a set of table rows** that are related to the current row — without collapsing the rows like a `GROUP BY` would.
+
+It’s useful for tasks like **ranking, running totals, averages, differences**, etc., over partitions (groups) of data.
+
+---
+
+### ✅ Basic Syntax
+
+```sql
+function_name(column) OVER (
+    [PARTITION BY partition_column]
+    [ORDER BY sort_column]
+)
+```
+
+---
+
+### 🧠 Common Window Functions
+
+| Function           | Description                              |
+| ------------------ | ---------------------------------------- |
+| `ROW_NUMBER()`     | Assigns unique row numbers per partition |
+| `RANK()`           | Rank with gaps (e.g., 1, 2, 2, 4...)     |
+| `DENSE_RANK()`     | Rank without gaps (e.g., 1, 2, 2, 3...)  |
+| `SUM()`, `AVG()`   | Running totals or moving averages        |
+| `LAG()` / `LEAD()` | Access previous or next row              |
+
+---
+
+### 🔍 Example 1: Row Number per Department
+
+```sql
+SELECT 
+  EmployeeID,
+  DepartmentID,
+  Salary,
+  ROW_NUMBER() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) AS RankInDept
+FROM employees;
+```
+
+📝 This assigns a salary rank **within each department**.
+
+---
+
+### 🔍 Example 2: Running Total of Salaries
+
+```sql
+SELECT 
+  EmployeeID,
+  Salary,
+  SUM(Salary) OVER (ORDER BY EmployeeID) AS RunningTotal
+FROM employees;
+```
+
+---
+
+### 🔍 Example 3: Previous Row's Salary (LAG)
+
+```sql
+SELECT 
+  EmployeeID,
+  Salary,
+  LAG(Salary, 1) OVER (ORDER BY EmployeeID) AS PreviousSalary
+FROM employees;
+```
+
+---
+
+### ⚠️ Notes:
+
+* Window functions **do not reduce** the number of rows.
+* `OVER()` clause is required — unlike aggregate functions.
+* You can **combine** window functions with `WHERE`, `GROUP BY`, or CTEs for powerful queries.
+
+---
+
+Would you like examples tailored to your schema (e.g., `programmers` table)?
+
+
+Creating a **trigger** in SQL allows you to **automatically perform an action** (like logging, validation, or updating another table) **before or after** an event like `INSERT`, `UPDATE`, or `DELETE` occurs on a table.
+
+---
+
+### ✅ Basic Syntax for Creating a Trigger (MySQL Example)
+
+```sql
+DELIMITER $$
+
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE | DELETE}
+ON table_name
+FOR EACH ROW
+BEGIN
+   -- Trigger logic here
+END$$
+
+DELIMITER ;
+```
+
+---
+
+### 🎯 Example: Log an Insert into a `log_table` When a New Programmer is Added
+
+Let's say you have a table:
+
+```sql
+CREATE TABLE programmers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Programmer_Name VARCHAR(100),
+    Salary INT
+);
+
+CREATE TABLE log_table (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    action VARCHAR(50),
+    name_logged VARCHAR(100),
+    log_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+Now the trigger:
+
+```sql
+DELIMITER $$
+
+CREATE TRIGGER log_programmer_insert
+AFTER INSERT ON programmers
+FOR EACH ROW
+BEGIN
+    INSERT INTO log_table (action, name_logged)
+    VALUES ('INSERT', NEW.Programmer_Name);
+END$$
+
+DELIMITER ;
+```
+
+---
+
+### 🔍 How It Works:
+
+* **AFTER INSERT**: Trigger fires **after** a new programmer is inserted.
+* **`NEW.Programmer_Name`**: Accesses the inserted value.
+* **`FOR EACH ROW`**: Applies to each row affected by the INSERT (not batch-wise).
+
+---
+
+### 🛠 Other Useful Trigger Examples
+
+#### 📌 BEFORE UPDATE Trigger to Prevent Salary Reduction
+
+```sql
+DELIMITER $$
+
+CREATE TRIGGER prevent_salary_cut
+BEFORE UPDATE ON programmers
+FOR EACH ROW
+BEGIN
+    IF NEW.Salary < OLD.Salary THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Salary cannot be decreased!';
+    END IF;
+END$$
+
+DELIMITER ;
+```
+
+---
+
+### ⚠️ Notes:
+
+* Triggers **must be unique per table/event/timing**.
+* Use `NEW.column` for `INSERT` and `UPDATE`, and `OLD.column` for `DELETE` and `UPDATE`.
+* MySQL doesn’t allow triggers to modify the table they are triggered on (e.g., no recursive triggers).
+
+---
+
+Would you like a trigger that updates audit logs, prevents invalid changes, or cascades updates? Let me know your use case and I’ll write one specifically for that.
+
