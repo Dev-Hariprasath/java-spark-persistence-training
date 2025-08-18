@@ -1,0 +1,86 @@
+**Scala & Functional Programming (6 Questions)**
+
+1. What are traits in Scala, and how do they differ from abstract classes?
+2. What is the difference between `val`, `var`, and `lazy val` in Scala?
+3. How does Scala support both functional and object-oriented paradigms?
+4. Explain error handling in Scala using `Try`, `Success`, and `Failure`.
+5. What are `Option`, `Some`, and `None` in Scala? How do they help with null safety?
+6. How does pattern matching work in Scala?
+
+---
+
+**Big Data Ecosystem & Hadoop (4 Questions)**
+7\. What is the Big Data ecosystem, and which components are part of it?
+8\. Explain the architecture of Hadoop and the role of NameNode & DataNode.
+9\. What is HDFS, and how does it store and replicate large files?
+10\. Compare HDFS with other distributed storage systems.
+
+---
+
+**Spark Basics & RDD (9 Questions)**
+11\. What is Apache Spark, and how does it differ from Hadoop MapReduce?
+12\. Explain Spark architecture (Driver, Executors, Cluster Manager).
+13\. What is an RDD, and how is it created?
+14\. Differentiate between narrow and wide transformations in Spark.
+15\. How does Spark handle RDD persistence and caching?
+16\. Explain Jobs, Stages, and Tasks in Spark execution.
+17\. What are common RDD programming patterns in Scala?
+18\. How do joins and aggregations work in RDDs?
+19\. What is a Directed Acyclic Graph (DAG) in Spark?
+
+---
+
+**Key-Value Operations & Dataset API (4 Questions)**
+20\. How do you create and use key-value pair RDDs?
+21\. What’s the difference between `reduceByKey` and `aggregateByKey`?
+22\. What advantages does the Dataset API offer over DataFrame and RDD?
+23\. When should you prefer Dataset over DataFrame?
+
+---
+
+**Spark SQL, DataFrames & Optimizer (8 Questions)**
+24\. What is the DataFrame API in Spark? How does it compare to RDDs?
+25\. How do you run SQL queries in Spark?
+26\. How does schema management work in Spark SQL?
+27\. How does Spark handle different data sources and formats (CSV, Parquet, JSON)?
+28\. What is the Catalyst optimizer, and how does it improve query performance?
+29\. What is predicate pushdown in Spark SQL, and why is it important?
+30\. What is a broadcast join, and when should you use it?
+31\. How do you define and use user-defined functions (UDFs) in Spark SQL?
+
+---
+
+**Performance Tuning & Resource Management (9 Questions)**
+32\. What are the main bottlenecks in Spark job performance?
+33\. How does caching improve Spark performance?
+34\. How do you decide the right number of partitions for a Spark job?
+35\. What is the role of `spark.sql.shuffle.partitions`?
+36\. How do you optimize shuffle operations in Spark?
+37\. What’s the difference between caching and checkpointing?
+38\. How do you handle skewed data in joins or aggregations?
+39\. How do you allocate resources for a Spark job in YARN?
+40\. What’s the difference between dynamic and static resource allocation?
+
+---
+
+**Data Cleaning, Transformation & Formats (4 Questions)**
+41\. How do you handle null values in Spark DataFrames?
+42\. How do you remove duplicates in Spark?
+43\. What’s columnar storage, and why is it faster for analytics?
+44\. How does partitioning work in file-based datasets like Parquet?
+
+---
+
+**GraphX & Advanced Topics (3 Questions)**
+45\. What is GraphX in Spark, and what problems does it solve?
+46\. Give an example of a graph algorithm implemented in GraphX.
+47\. What is social network analysis in GraphX?
+
+---
+
+**Monitoring & Debugging (3 Questions)**
+48\. How do you monitor Spark jobs using the Spark UI?
+49\. What key metrics should you monitor to identify bottlenecks?
+50\. How do you debug failed Spark jobs?
+
+---
