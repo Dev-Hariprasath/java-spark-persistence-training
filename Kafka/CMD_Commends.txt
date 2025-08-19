@@ -1,0 +1,37 @@
+
+--ZooKeeper
+
+
+C:\Windows\System32>cd C:\kafka_2.13-3.9.1
+
+C:\kafka_2.13-3.9.1>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+--Kafka
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+--Producer
+
+C:\Windows\System32> 
+
+1. ===> cd C:\kafka_2.13-3.9.1
+
+2. === > .\bin\windows\kafka-topics.bat --create --topic quickstart \ --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Created topic quickstart.
+
+3. ===>.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+quickstart
+
+4. ===>.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic quickstart --from-beginning
+
+
+--Consumer 
+
+
+C:\Windows\System32>
+
+1. ===> cd C:\kafka_2.13-3.9.1
+
+2. ===> .\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic quickstart
+
