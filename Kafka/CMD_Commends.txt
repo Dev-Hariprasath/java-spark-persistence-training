@@ -20,10 +20,9 @@ C:\Windows\System32>
 2. === > .\bin\windows\kafka-topics.bat --create --topic quickstart \ --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 Created topic quickstart.
 
-3. ===>.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
-quickstart
+3. ===>.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092 quickstart
 
-4. ===>.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic quickstart --from-beginning
+4. ===>.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic quickstart --from beginning
 
 
 --Consumer 
