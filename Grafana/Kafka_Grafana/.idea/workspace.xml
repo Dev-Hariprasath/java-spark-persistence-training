@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b676c99b-e04b-4747-bdad-2d9b4b7e521e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Kafka_Grafana.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Kafka_Grafana/Kafka_Grafana.Kafka_Grafana-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/processing/wordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/src/main/scala/com/advance/CEP.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/src/main/scala/com/advance/Inputs.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/src/main/scala/com/advance/PatternProcessing.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/src/main/scala/com/advance/StreamEnrichment.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Advance/src/main/scala/com/advance/TemporalOperations.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_Processing/src/main/scala/com/processing/CEP.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/.idea/scala_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/src/main/scala/com/realtimeAnalytics/MLStreamingJob.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kafka/Kafka_RealTimeAnalytics/src/main/scala/com/realtimeAnalytics/TrainOfflineModel.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spark/Spark_Streaming/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kafka/CMD_Commends.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kafka/CMD_Commends.txt" afterDir="false" />
-    </list>
+    <list default="true" id="b676c99b-e04b-4747-bdad-2d9b4b7e521e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
